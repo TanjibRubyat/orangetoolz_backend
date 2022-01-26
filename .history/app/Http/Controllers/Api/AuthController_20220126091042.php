@@ -118,7 +118,7 @@ class AuthController extends Controller
                     "Error"
                 ]);
             }
-        }else if($user[0]['role'] == 0){
+        }else if($user[0]['role'] != 1){
             dd("Here..");
             return response()->json([
                 "status" => "failed",
